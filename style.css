@@ -1,0 +1,126 @@
+*, ::before, ::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.center {
+  width: 100vw;
+  height: 100vh;
+  background-color: #eeecec;
+  display: grid;
+  place-items: center;
+}
+:root {
+  --box-shadow: 0 1rem 1rem -0.8rem rgba(0,0,0,1);
+}
+html {
+  font-size: 62.5%;
+}
+.face {
+  width: 30rem;
+  height: 28rem;
+  border: 0.5rem solid #050506;
+  border-radius: 50%;
+  box-shadow: var(--box-shadow);
+  position: relative;
+}
+.face::before, .face::after{
+  content: '';
+  width: 15rem;
+  height: 14rem;
+  position: absolute;
+  top: -3rem;
+  background-color: rgb(184,173,173);
+  border: 3.5rem solid #050506;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+.face::before {
+  left: -10rem;
+  transform: rotate(120deg);
+}
+.face::after {
+  right: -10rem;
+  transform: rotate(-120deg);
+}
+.eyes {
+  width: 28rem;
+  height: 13rem;
+  margin: 60px auto 0 auto ;
+  display: flex;
+  justify-content: center;
+}
+.left-eyes {
+  width: 8.5rem;
+  height: 10.5rem;
+  background-color: #050506;
+  border-radius: 45%;
+  display: inline-block;
+  margin-right: 40px;
+  position: relative;
+  box-shadow: var(--box-shadow);
+}
+.left-eyes::before {
+  content: '';
+  width: 4rem;
+  height: 5.25rem;
+  position: absolute;
+  border: 1rem solid #eee9e9;
+  top: 50%;
+  left: 50%;
+  border-radius: 45%;
+  transform: translate(-50%,-50%);
+}
+.left-eyes::after {
+  content: '';
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  background-color: #eee9e9;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.right-eyes {
+  width: 8.5rem;
+  height: 10.5rem;
+  background-color: #050506;
+  border-radius: 45%;
+  display: inline-block;
+  border-radius: 45%;
+  position: relative;
+  box-shadow: var(--box-shadow);
+}
+.right-eyes::before {
+  content: '';
+  width: 4rem;
+  height: 5.25rem;
+  position: absolute;
+  border: 1rem solid #eee9e9;
+  top: 50%;
+  left: 50%;
+  border-radius: 45%;
+  transform: translate(-50%,-50%);
+}
+.right-eyes::after {
+  content: '';
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  background-color: #eee9e9;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%,-50%);
+}
+.nose {
+  width: 5rem;
+  height: 5rem;
+  background-color: black;
+  margin: 0 auto;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  box-shadow: var(--box-shadow);
+}
